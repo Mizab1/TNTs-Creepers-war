@@ -114,7 +114,7 @@ const primingCondition: CombinedConditions = _.or(
     sort: "nearest",
     limit: 1,
     // dy: -2,
-    distance: [Infinity, 2],
+    distance: [Infinity, 2], // Neighbor TNT bug with distance parameter
     tag: ["!custom_tnt"],
   })
 );
