@@ -1,6 +1,5 @@
 import {
   Coordinates,
-  Data,
   MCFunction,
   NBT,
   Selector,

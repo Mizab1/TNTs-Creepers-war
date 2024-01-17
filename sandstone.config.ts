@@ -1,10 +1,10 @@
 import type { SandstoneConfig } from "sandstone";
 
 export default {
-  name: "CustomTNT4",
+  name: "TNTs & Creepers War",
   description: ["A datapack by ", { text: "Mizab", color: "gold" }],
-  formatVersion: 15,
-  namespace: "custom_tnt_4",
+  formatVersion: 26,
+  namespace: "tnts_and_creepers_war",
   packUid: "-1o439o1",
   // saveOptions: { path: "./.sandstone/output/datapack" },
   saveOptions: { world: "Testing 4" },
