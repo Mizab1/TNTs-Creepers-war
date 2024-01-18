@@ -150,7 +150,7 @@ export const explosionHandler = (
           })
         )
         .run(() => {
-          data.merge.entity(self, { Fuse: FuseTimer });
+          data.merge.entity(self, { fuse: FuseTimer });
           tag(self).add("custom_tnt"); // Add a tag for tracking purposes
           tag(self).remove("picked_up");
         });

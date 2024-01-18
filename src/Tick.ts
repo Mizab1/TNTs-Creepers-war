@@ -1,11 +1,10 @@
 import { MCFunction, Objective, Selector } from "sandstone";
 import { AddGravity } from "./CustomTnt/Auxillary/AddGravityToTnt";
-import { spawnSlime, teleportSlime } from "./CustomTnt/DisableSlots";
+import { AddDarkness } from "./CustomTnt/Auxillary/GhostTnt/AddDarkness";
 import { decrementFuseTime } from "./CustomTnt/Fuse";
 import { handler, setTntblock } from "./CustomTnt/Tick";
-import { Fireball } from "./Objects/Fireball";
-import { AddDarkness } from "./CustomTnt/Auxillary/GhostTnt/AddDarkness";
 import { hitGround } from "./Items/Dynamite";
+import { Fireball } from "./Objects/Fireball";
 
 const fuseTimeObj = Objective.create("fuse_time_obj", "dummy");
 const rngObj = Objective.create("rng_obj", "dummy");
