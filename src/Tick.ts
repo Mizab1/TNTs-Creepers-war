@@ -1,4 +1,4 @@
-import { MCFunction, Objective, Selector } from "sandstone";
+import { MCFunction, NBT, Objective, Selector, kill } from "sandstone";
 import { AddGravity } from "./CustomTnt/Auxillary/AddGravityToTnt";
 import { AddDarkness } from "./CustomTnt/Auxillary/GhostTnt/AddDarkness";
 import { decrementFuseTime } from "./CustomTnt/Fuse";
@@ -35,6 +35,14 @@ const tick = MCFunction(
 
     // Fireball
     Fireball();
+
+    // Kill the TNT item on the ground
+    kill(
+      Selector("@e", {
+        type: "minecraft:item",
+        nbt: { Item: { id: "minecraft:tnt", Count: NBT.byte(1) } },
+      })
+    );
   },
   { runEachTick: true }
 );
