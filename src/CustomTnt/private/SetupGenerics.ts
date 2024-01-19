@@ -27,7 +27,7 @@ import { i } from "../../Utils/Functions";
  * @param {string} tag - The tag used to check if the endermite is of a specific type
  * @param {number} customModelData - The custom model data for the TNT item.
  */
-const placeTnt = (tag: string, customModelData: number) => {
+export const placeTnt = (tag: string, customModelData: number) => {
   _.if(Selector("@s", { tag: tag }), () => {
     playsound("minecraft:block.grass.place", "block", "@a", rel(0, 0, 0));
     setblock(rel(0, 0, 0), "minecraft:tnt");
